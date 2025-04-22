@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT     0
-#define CAPS        1
 #define FUNCTION    2
 
 &digital_crown {
@@ -46,17 +45,6 @@
     &kp LSHIFT    &kp LALT    &kp LCMD    &kp GRAVE                           &kp SPACE               &kp BSLH    &kp LEFT    &kp RIGHT   &kp DOWN    &kp UP                          &kp KP_N0                       &kp KP_DOT      &kp KP_ENTER
     >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        caps_layer {
-            bindings = <
-                &trans      &trans  
-    &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans         &trans          &trans       &trans     &trans      &trans      &trans
-    &trans      &kp RS(Q)   &kp RS(W)   &kp RS(E)   &kp RS(R)   &kp RS(T)   &kp RS(Y)   &kp RS(U)   &kp RS(I)   &kp RS(O)   &kp RS(P)    &trans         &trans                       &trans     &trans      &trans      &trans
-    &trans      &kp RS(A)   &kp RS(S)   &kp RS(D)   &kp RS(F)   &kp RS(G)   &kp RS(H)   &kp RS(J)   &kp RS(K)   &kp RS(L)   &trans       &trans         &trans                       &trans     &trans      &trans      &trans
-    &trans      &kp RS(Z)   &kp RS(X)   &kp RS(C)   &kp RS(V)   &kp RS(B)   &kp RS(N)   &kp RS(M)   &trans      &trans      &trans                                                   &trans     &trans      &trans    
-    &trans      &trans      &trans      &trans                              &trans                  &trans      &trans      &trans       &trans         &trans                       &trans                 &trans      &trans 
-    >;
         };
 
         function_layer {
