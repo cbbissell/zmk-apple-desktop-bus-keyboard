@@ -2,37 +2,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 
-#define DEFAULT     0
-#define FUNCTION    2
-
-&digital_crown {
-    status = "okay";
-};
 
 / {
-    behaviors {
-        pwrbtn: pwrbtn {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <2000>;
-            bindings = <&soft_off>, <&nxt_bt_conn>;
-        };
-    };
-
-    macros {
-        nxt_bt_conn: nxt_bt_conn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_NXT>;
-        };
-    };
-
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&digital_crown>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
         default_layer {
