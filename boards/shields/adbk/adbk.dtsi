@@ -20,9 +20,9 @@
         row-gpios
             = <&ext1 0 GPIO_ACTIVE_LOW>
             , <&ext2 5 GPIO_ACTIVE_LOW>
-            , <&ext2 1 GPIO_ACTIVE_LOW>
-            , <&ext2 2 GPIO_ACTIVE_LOW>
-            , <&ext2 3 GPIO_ACTIVE_LOW>
+            , <&ext1 1 GPIO_ACTIVE_LOW>
+            , <&ext1 2 GPIO_ACTIVE_LOW>
+            , <&ext1 3 GPIO_ACTIVE_LOW>
             ;
         col-gpios
             = <&ext2 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
