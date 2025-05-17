@@ -52,7 +52,7 @@
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         col-gpios
-            = <&ext1 0 GPIO_ACTIVE_HIGH>
+            = <&ext1 0 GPIO_ACTIVE_LOW>
             ;
         row-gpios
             = <&ext2 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
