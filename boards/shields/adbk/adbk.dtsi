@@ -10,11 +10,10 @@
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         col-gpios
-            = <&ext2 13 GPIO_ACTIVE_HIGH>
-            , <&ext2 12 GPIO_ACTIVE_HIGH>
+            = <&xiao_d 8 GPIO_ACTIVE_LOW>
             ;
         row-gpios
-            = <&ext1 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            = <&xiao_d 7 GPIO_ACTIVE_LOW>
             ;
 
     };
@@ -22,10 +21,10 @@
     default_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
         rows = <1>;
-        columns = <2>;
+        columns = <1>;
 
         map = <
-            RC(0,0) RC(0,1)
+            RC(0,0)
         >;
     };
 
