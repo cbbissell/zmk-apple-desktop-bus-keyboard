@@ -9,7 +9,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &kp A
+                &bt BT_CLR &kp A
             >;
         };
     };
