@@ -4,12 +4,11 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
-        zephyr,display = &nice_view;
     };
 
     kscan0: kscan_matrix {
         compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "row2col";
+        diode-direction = "col2row";
         col-gpios
             = <&ext1 0 GPIO_ACTIVE_LOW>
             , <&ext2 5 GPIO_ACTIVE_LOW>
