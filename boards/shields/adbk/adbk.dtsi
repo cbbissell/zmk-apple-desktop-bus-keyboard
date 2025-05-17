@@ -55,7 +55,7 @@
             = <&ext1 0 GPIO_ACTIVE_LOW>
             ;
         row-gpios
-            = <&ext2 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            = <&ext2 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
 
     };
