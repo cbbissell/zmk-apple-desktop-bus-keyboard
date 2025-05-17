@@ -6,10 +6,6 @@
 #define CAPS        1
 #define FUNCTION    2
 
-&digital_crown {
-    status = "okay";
-};
-
 / {
     behaviors {
         pwrbtn: pwrbtn {
@@ -27,11 +23,6 @@
             #binding-cells = <0>;
             bindings = <&bt BT_NXT>;
         };
-    };
-
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&digital_crown>;
     };
 
     keymap {
